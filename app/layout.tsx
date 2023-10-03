@@ -1,9 +1,12 @@
-import Header from "@/components/Header";
+import Header from "@/components/shared/Header";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Footer from "@/components/Footer";
-import ThemeSwitch from "@/components/ThemeSwitch";
+import Footer from "@/components/shared/Footer";
+import ThemeSwitch from "@/components/shared/ThemeSwitch";
+import ActiveSectionContextProvider from "@/context/activeSectionContext";
+import { Toaster } from "react-hot-toast";
+import ThemeContextProvider from "@/context/themeContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,12 +28,18 @@ export default function RootLayout({
         {/* Background-gradient */}
         <div className="bg-[#fbe2e3] absolute top-[-6rem] -z-10 right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-[#946263]" />
         <div className="bg-[#dbd7fb] absolute top-[-1rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-[#676394]" />
-        
-        <Header/>
-        {children}
-        <Footer/>
 
-        <ThemeSwitch/>
+        <ActiveSectionContextProvider>
+          <ThemeContextProvider>
+            <Header />
+            {children}
+            <Footer />
+
+            <Toaster position="top-right" />
+
+            <ThemeSwitch />
+          </ThemeContextProvider>
+        </ActiveSectionContextProvider>
       </body>
     </html>
   );
