@@ -67,11 +67,11 @@ export const projectsData = [
     projectUrl: "https://nector-social-media-app.vercel.app/",
   },
   {
-    id:"xcrypto",
-    title: "Xcrypto",
+    id:"raincrypto",
+    title: "RainCrypto",
     description:
       "Developed a web application for crypto trading with real-time data. User can view all crypto related data in a single place.",
-    tags: ["React", "JavaScript", "Sass", "Chakra UI"],
+    tags: ["React", "JavaScript", "Chakra UI"],
     imageUrl: project2Img,
     projectUrl: "https://raincrypto-raincrypt.vercel.app/",
   },
