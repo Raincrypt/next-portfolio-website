@@ -1,10 +1,10 @@
 import React from "react";
 import { FaLaptopCode } from "react-icons/fa";
-import { AiFillAndroid, AiFillDatabase } from "react-icons/ai";
 import chaosDoodlesLogo from "@/public/company_logo/chaosDoodles.png"
-import project1Img from "@/public/projects/project1.jpg";
-import project2Img from "@/public/projects/project2.jpg";
+import project1Img from "@/public/projects/project1.png";
+import project2Img from "@/public/projects/project2.png";
 import project3Img from "@/public/projects/project3.png";
+import project4Img from "@/public/projects/project4.png";
 import { PersonalDetailsDataType } from "./types";
 
 export const personalDetailsData: PersonalDetailsDataType = {
@@ -90,7 +90,7 @@ export const projectsData = [
     description:
       "Created a 2048 game, which is a fun game to improve your cognitive function, memory, and problem-solving skills.",
     tags: ["HTML", "CSS", "JavaScript"],
-    imageUrl: project1Img,
+    imageUrl: project4Img,
     projectUrl: "https://2048-game-ten.vercel.app/",
   },
 ] as const;
