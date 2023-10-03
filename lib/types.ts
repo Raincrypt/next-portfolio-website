@@ -1,5 +1,14 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import { links } from "./data";
+
+export type PersonalDetailsDataType = {
+  name: string;
+  email: string;
+  yrsOfExp: number;
+  fieldOfOccupation: string;
+  linkedinUrl: string;
+  githubUrl: string;
+}
 
 export type SectionName = (typeof links)[number]["name"];
 

@@ -1,10 +1,20 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/project1.jpg";
-import rmtdevImg from "@/public/project2.jpg";
-import wordanalyticsImg from "@/public/project3.jpg";
+import { FaLaptopCode } from "react-icons/fa";
+import { AiFillAndroid, AiFillDatabase } from "react-icons/ai";
+import chaosDoodlesLogo from "@/public/company_logo/chaosDoodles.png"
+import project1Img from "@/public/projects/project1.jpg";
+import project2Img from "@/public/projects/project2.jpg";
+import project3Img from "@/public/projects/project3.png";
+import { PersonalDetailsDataType } from "./types";
+
+export const personalDetailsData: PersonalDetailsDataType = {
+  name: "Mousom",
+  email: "mousoms2204@gmail.com",
+  yrsOfExp: 1,
+  fieldOfOccupation: "Web Developer",
+  linkedinUrl: "https://www.linkedin.com/in/mousom-sarkar-a38b21165/",
+  githubUrl: "https://github.com/Raincrypt"
+}
 
 export const links = [
   {
@@ -35,52 +45,53 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
-    description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
-  },
-  {
-    title: "Front-End Developer",
-    location: "Gurgaon, Haryana",
+    companyLogoUrl: chaosDoodlesLogo,
+    company: "Chaos Doodles",
+    jobProfile: "Front-End Developer",
     description:
       "Worked on their website as a Front-End Developer. Responsibilities include updating website UI, Adding components like carousel, testimonies etc..",
-    icon: React.createElement(CgWorkAlt),
+    icon: React.createElement(FaLaptopCode),
     date: "2021 - 2022",
   },
-  {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
-  },
-] as const;
+]
 
+// Make Sure the Id is Unique
 export const projectsData = [
   {
+    id:"nector",
     title: "Nector",
     description:
       "Created a social media website where people can express their opinions freely",
     tags: ["React", "Next.js", "MongoDB", "Tailwind", "Shadcn"],
-    imageUrl: corpcommentImg,
+    imageUrl: project1Img,
+    projectUrl: "https://nector-social-media-app.vercel.app/",
   },
   {
+    id:"xcrypto",
     title: "Xcrypto",
     description:
       "Developed a web application for crypto trading with real-time data. User can view all crypto related data in a single place.",
-    tags: ["React", "JavaScript", "Sass", "Redux"],
-    imageUrl: rmtdevImg,
+    tags: ["React", "JavaScript", "Sass", "Chakra UI"],
+    imageUrl: project2Img,
+    projectUrl: "https://raincrypto-raincrypt.vercel.app/",
   },
   {
+    id:"netflix-clone",
     title: "Netflix Clone",
     description:
       "Created a Netflix Clone that displays Latest Movies real time.",
     tags: ["React", "Tailwind", "Firebase"],
-    imageUrl: wordanalyticsImg,
+    imageUrl: project3Img,
+    projectUrl: "https://netflix-clone-raincrypt.netlify.app/",
+  },
+  {
+    id:"2048-game",
+    title: "2048 Game",
+    description:
+      "Created a 2048 game, which is a fun game to improve your cognitive function, memory, and problem-solving skills.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    imageUrl: project1Img,
+    projectUrl: "https://2048-game-ten.vercel.app/",
   },
 ] as const;
 
@@ -93,6 +104,8 @@ export const skillsData = [
   "Next.js",
   "Tailwind",
   "Sass",
+  "Shadcn",
+  "Chakra UI",
   "MongoDB",
   "Firebase",
   "Framer Motion",

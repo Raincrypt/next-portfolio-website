@@ -8,6 +8,7 @@ import SubmitBtn from "../ui/SubmitBtn";
 import { sendEmail } from "@/lib/actions/sendEmail";
 import { emailLength, messageLength } from "@/lib/constants";
 import toast from "react-hot-toast";
+import { personalDetailsData } from "@/lib/data";
 
 const Contact = () => {
   const { ref } = useSectionInView("Contact");
@@ -34,8 +35,8 @@ const Contact = () => {
 
       <p className="text-gray-700 -mt-6 dark:text-white/80">
         Please contact me directly at{" "}
-        <a className="underline" href="mailto:mousoms2204@gmail.com">
-          mousoms2204@gmail.com
+        <a className="underline" href={`mailto:${personalDetailsData.email}`}>
+          {personalDetailsData.email}
         </a>{" "}
         or through this form.
       </p>

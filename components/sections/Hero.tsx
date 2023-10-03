@@ -9,11 +9,11 @@ import Image from "next/image";
 import profileImage from "@/public/profileImage.jpg";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/activeSectionContext";
+import { personalDetailsData } from "@/lib/data";
 
 const Hero = () => {
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
-
   return (
     <section
       ref={ref}
@@ -64,9 +64,9 @@ const Hero = () => {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Mousom.</span> I'm a{" "}
-        <span className="font-bold">Web developer</span> with{" "}
-        <span className="font-bold">1 year</span> of experience. I enjoy
+        <span className="font-bold">Hello, I'm {personalDetailsData.name}.</span> I'm a{" "}
+        <span className="font-bold">{personalDetailsData.fieldOfOccupation}</span> with{" "}
+        <span className="font-bold">{personalDetailsData.yrsOfExp} year</span> of experience. I enjoy
         building <span className="italic">websites</span>. My focus is{" "}
         <span className="underline">React (Next.js)</span>.
       </motion.h1>
@@ -103,7 +103,7 @@ const Hero = () => {
 
         <a
           className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://www.linkedin.com/in/mousom-sarkar-a38b21165/"
+          href={personalDetailsData.linkedinUrl}
           target="_blank"
         >
           <BsLinkedin />
@@ -111,7 +111,7 @@ const Hero = () => {
 
         <a
           className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://github.com/Raincrypt"
+          href={personalDetailsData.githubUrl}
           target="_blank"
         >
           <FaGithubSquare />

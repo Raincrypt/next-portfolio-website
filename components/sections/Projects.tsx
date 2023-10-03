@@ -13,8 +13,8 @@ export default function Projects() {
     <section id="projects" className="scroll-mt-28 mb-28" ref={ref}>
       <SectionHeading>My projects</SectionHeading>
       <div>
-        {projectsData.map((project, index) => (
-          <React.Fragment key={index}>
+        {projectsData.map((project) => (
+          <React.Fragment key={project.id}>
             <ProjectCard {...project} />
           </React.Fragment>
         ))}

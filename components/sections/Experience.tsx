@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { VerticalTimeline } from "react-vertical-timeline-component";
+import { motion } from "framer-motion";
 import "react-vertical-timeline-component/style.min.css";
 import { experiencesData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
@@ -12,18 +12,21 @@ export default function Experience() {
   const { ref } = useSectionInView("Experience");
 
   return (
-    <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
+    <section id="experience" ref={ref} className="scroll-mt-40 mb-28 sm:mb-40">
       <SectionHeading>My experience</SectionHeading>
-      <VerticalTimeline lineColor="">
+      <motion.div 
+        className="flex flex-col gap-5"
+      >
         {experiencesData.map((item, index) => (
           <ExperienceCard
-            title={item.title}
+            logo={item.companyLogoUrl ? item.companyLogoUrl : null}
+            companyTitle={item.company}
             desc={item.description}
-            location={item.location}
+            jobProfile={item.jobProfile}
             key={index}
           />
         ))}
-      </VerticalTimeline>
+      </motion.div>
     </section>
   );
 }

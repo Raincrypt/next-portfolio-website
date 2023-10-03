@@ -17,7 +17,7 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        Results-driven Front-End Web Developer with expertise in various
+        Results-driven Web Developer with expertise in various
         technologies. Skilled in creating visually appealing and user-friendly
         websites. Strong problem-solving skills and a collaborative team player.
         Committed to staying updated with industry trends and delivering
@@ -33,8 +33,7 @@ export default function About() {
         <span className="font-medium">
           React, Next.js, TypeScript, and MongoDB
         </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
+        . I am always looking to learn new technologies. I am currently looking for a{" "}
         <span className="font-medium">full-time position</span> as a software
         developer.
       </p>
