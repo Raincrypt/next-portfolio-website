@@ -33,7 +33,7 @@ const Hero = () => {
           >
             <Image
               src={profileImage}
-              alt="Mousom portrait"
+              alt="My portrait"
               width={192}
               height={192}
               quality={95}
