@@ -3,7 +3,7 @@ import { FaLaptopCode } from "react-icons/fa";
 import chaosDoodlesLogo from "@/public/company_logo/chaosDoodles.png"
 import project1Img from "@/public/projects/project1.png";
 import project2Img from "@/public/projects/project2.png";
-import project3Img from "@/public/projects/project3.png";
+import project5Img from "@/public/projects/project5.png";
 import project4Img from "@/public/projects/project4.png";
 import { PersonalDetailsDataType } from "./types";
 
@@ -58,6 +58,15 @@ export const experiencesData = [
 // Make Sure the Id is Unique
 export const projectsData = [
   {
+    id:"notex",
+    title: "NoteX",
+    description:
+      "Created a Note Builder App where users can maintain, customize and share their notes and documents.",
+    tags: ["React", "Next", "Tailwind", "Shadcn", "Convex"],
+    imageUrl: project5Img,
+    projectUrl: "https://notex-notes-app.vercel.app/",
+  },
+  {
     id:"nector",
     title: "Nector",
     description:
@@ -74,15 +83,6 @@ export const projectsData = [
     tags: ["React", "JavaScript", "Chakra UI"],
     imageUrl: project2Img,
     projectUrl: "https://raincrypto-raincrypt.vercel.app/",
-  },
-  {
-    id:"netflix-clone",
-    title: "Netflix Clone",
-    description:
-      "Created a Netflix Clone that displays Latest Movies real time.",
-    tags: ["React", "Tailwind", "Firebase"],
-    imageUrl: project3Img,
-    projectUrl: "https://netflix-clone-raincrypt.netlify.app/",
   },
   {
     id:"2048-game",
