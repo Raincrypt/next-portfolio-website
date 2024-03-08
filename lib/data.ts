@@ -1,7 +1,7 @@
 import React from "react";
 import { FaLaptopCode } from "react-icons/fa";
 import chaosDoodlesLogo from "@/public/company_logo/chaosDoodles.png"
-import project1Img from "@/public/projects/project1.png";
+import project6Img from "@/public/projects/project6.png";
 import project2Img from "@/public/projects/project2.png";
 import project5Img from "@/public/projects/project5.png";
 import project4Img from "@/public/projects/project4.png";
@@ -13,7 +13,8 @@ export const personalDetailsData: PersonalDetailsDataType = {
   yrsOfExp: 1,
   fieldOfOccupation: "Web Developer",
   linkedinUrl: "https://www.linkedin.com/in/mousom-sarkar-a38b21165/",
-  githubUrl: "https://github.com/Raincrypt"
+  githubUrl: "https://github.com/Raincrypt",
+  leetcode: "https://leetcode.com/Raincrypt/"
 }
 
 export const links = [
@@ -67,13 +68,13 @@ export const projectsData = [
     projectUrl: "https://notex-notes-app.vercel.app/",
   },
   {
-    id:"nector",
-    title: "Nector",
+    id:"eventhub",
+    title: "EventHub",
     description:
-      "Created a social media website where people can express their opinions freely",
+      "Created a Event hosting website where people can buy tickets for an event or advertise their own event.",
     tags: ["React", "Next.js", "MongoDB", "Tailwind", "Shadcn"],
-    imageUrl: project1Img,
-    projectUrl: "https://nector-social-media-app.vercel.app/",
+    imageUrl: project6Img,
+    projectUrl: "https://eventhub-ind.vercel.app/",
   },
   {
     id:"raincrypto",

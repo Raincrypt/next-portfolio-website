@@ -8,6 +8,7 @@ export type PersonalDetailsDataType = {
   fieldOfOccupation: string;
   linkedinUrl: string;
   githubUrl: string;
+  leetcode: string;
 }
 
 export type SectionName = (typeof links)[number]["name"];

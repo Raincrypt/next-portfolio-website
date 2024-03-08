@@ -1,25 +1,19 @@
-import { projectsData } from '@/lib/data'
-import React from 'react'
+import { projectsData } from "@/lib/data";
+import React from "react";
 
 type ParamsType = {
-  params: string
-}
+  params: string;
+};
 
-const page = ({params}: ParamsType) => {
-
+const page = ({ params }: ParamsType) => {
   const fetchProject = () => {
-    const project = projectsData[0]
-    console.log(project, typeof project)
-  }
+    const project = projectsData[0];
+    console.log(project, typeof project);
+  };
 
   fetchProject();
 
-  
-  return (
-    <main>
-      
-    </main>
-  )
-}
+  return <main>Projects</main>;
+};
 
-export default page
+export default page;
