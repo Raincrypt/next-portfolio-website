@@ -63,7 +63,7 @@ export const projectsData = [
     title: "NoteX",
     description:
       "Created a Note Builder App where users can maintain, customize and share their notes and documents.",
-    tags: ["React", "Next", "Tailwind", "Shadcn", "Convex"],
+    tags: ["React", "Next.js", "Typescript", "Tailwind", "Shadcn", "Convex"],
     imageUrl: project5Img,
     projectUrl: "https://notex-notes-app.vercel.app/",
   },
@@ -72,7 +72,7 @@ export const projectsData = [
     title: "EventHub",
     description:
       "Created a Event hosting website where people can buy tickets for an event or advertise their own event.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Shadcn"],
+    tags: ["React", "Next.js", "Typescript", "MongoDB", "Tailwind", "Shadcn"],
     imageUrl: project6Img,
     projectUrl: "https://eventhub-ind.vercel.app/",
   },
@@ -85,6 +85,17 @@ export const projectsData = [
     imageUrl: project2Img,
     projectUrl: "https://raincrypto-raincrypt.vercel.app/",
   },
+  {
+    id:"2048-game",
+    title: "2048 Game",
+    description:
+      "Created a 2048 game, which is a fun game to improve your cognitive function, memory, and problem-solving skills.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    imageUrl: project4Img,
+    projectUrl: "https://2048-game-ten.vercel.app/",
+  },
+
+  // ==================== Other Projects ===========================
   {
     id:"2048-game",
     title: "2048 Game",

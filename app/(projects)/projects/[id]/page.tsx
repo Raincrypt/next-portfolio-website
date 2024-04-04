@@ -1,19 +1,13 @@
 import { projectsData } from "@/lib/data";
-import React from "react";
+import React, { useState } from "react";
 
 type ParamsType = {
   params: string;
 };
 
 const page = ({ params }: ParamsType) => {
-  const fetchProject = () => {
-    const project = projectsData[0];
-    console.log(project, typeof project);
-  };
 
-  fetchProject();
-
-  return <main>Projects</main>;
+  return <main>{params}</main>;
 };
 
 export default page;
